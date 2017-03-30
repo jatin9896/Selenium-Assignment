@@ -60,10 +60,12 @@ class SeleniumTesting extends FlatSpec with Credential{
     driver.findElement(By.cssSelector(".pure-g-r div.pure-u-2-3 table tbody tr:nth-child(9) td:nth-child(2) input")).click()
    // driver.findElement(By.cssSelector(".pure-g-r div.pure-u-1 table
     // tbody tr:nth-child(9) td:nth-child(2) input")).click()
-     driver.findElementById("#os_emailId").sendKeys("fake@gmail.com")
-        driver.findElement(By.cssSelector(".pure-u-1-2 a")).click()
+   //   driver.findElementById("#os_emailId").sendKeys("fake@gmail.com")
+   //   driver.findElement(By.cssSelector(".pure-u-1-2 a")).click()
     // driver.findElement(By.cssSelector(".div.ng-isolate-scope:nth-child(2) div.pure-u-1-3 a")).click()
-     //driver.findElement(By.cssSelector(".pure-u-1-2 a")).click()
+    Thread.sleep(2000)
+     driver.findElement(By.cssSelector(".pure-u-1-2 a")).click()
+
 
   }
   "user" should "logout" in{
@@ -80,3 +82,4 @@ class SeleniumTesting extends FlatSpec with Credential{
   }
 
 }
+
