@@ -78,7 +78,7 @@ class SeleniumTesting extends FlatSpec with Credential{
     Thread.sleep(2000)
     driver.findElement(By.cssSelector("._3Ji-EC li:nth-child(8) li:nth-child(10)")).click()
         Thread.sleep(5000)
-   // driver.close()
+    driver.close()
   }
 
 }
